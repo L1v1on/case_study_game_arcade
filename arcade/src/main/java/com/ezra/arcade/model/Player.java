@@ -1,6 +1,12 @@
 package com.ezra.arcade.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Player {
+
+    @Id
     private Integer id;
     private String username;
     private String password;
