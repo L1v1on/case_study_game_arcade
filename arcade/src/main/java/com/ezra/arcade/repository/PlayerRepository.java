@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PlayerRepository extends CrudRepository<Player, Integer> {
-    //Put any custom queries here
+    //Put any custom queries method signatures here in format findByProperty() to have Spring do the work.
 }
