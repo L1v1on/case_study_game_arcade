@@ -19,6 +19,7 @@ public class LoginController {
         return "login";
     }
 
+    // Tested mapping with Postman. Works and behaves how I assumed.
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String doLogin(ModelMap model, @RequestParam String username, @RequestParam String password){
         // TODO: validate user
