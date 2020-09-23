@@ -24,6 +24,10 @@ public class PlayerService {
         return playerRepository.findById(id).get();
     }
 
+    public Player getPlayer(String username){
+        return playerRepository.findByUsername(username);
+    }
+
     public void addPlayer(Player player) {
         playerRepository.save(player);
     }

@@ -17,9 +17,15 @@ public class PlayerController {
         return playerService.getAllPlayers();
     }
 
-    @RequestMapping("/player/{id}")
-    public Player getPlayer(@PathVariable Integer id){
-        return playerService.getPlayer(id);
+//    @RequestMapping("/player/{id}")
+//    public Player getPlayerById(@PathVariable Integer id){
+//        return playerService.getPlayer(id);
+//    }
+
+    // Endpoint works. Must solve ambiguous handler issue with above mapping
+    @RequestMapping("/player/{username}")
+    public Player getPlayerByUsername(@PathVariable String username){
+        return playerService.getPlayer(username);
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/player")
