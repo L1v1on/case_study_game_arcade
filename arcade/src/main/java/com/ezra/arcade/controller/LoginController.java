@@ -24,9 +24,10 @@ public class LoginController {
     public String doLogin(ModelMap model, @RequestParam String username, @RequestParam String password){
         // TODO: validate user
         Player playerLogin = playerService.getPlayer(username);
-        if(playerLogin.getUsername().equals(username) && playerLogin.getPassword().equals(password)){
+        if(playerLogin != null && playerLogin.getUsername().equals(username) && playerLogin.getPassword().equals(password)){
             return "gameHub";
         }
+        model.put("errorMessage", "Wrong Credentials");
         return "login"; // TODO: return to page with some error message
     }
 }

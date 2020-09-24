@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Game Hub</title>
+<title>Game1</title>
 </head>
 
 <body>
