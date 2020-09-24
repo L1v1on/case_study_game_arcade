@@ -11,9 +11,9 @@
             <form method="post">
                 Name : <input type="text" name="username" />
                 Password : <input type="password" name="password" />
+                Initials : <input type="text" name="initials" />
                 <input type="submit" />
             </form>
-            <a href="register"><h3>Click here to register</h3></a>
         </div>
     </body>
 

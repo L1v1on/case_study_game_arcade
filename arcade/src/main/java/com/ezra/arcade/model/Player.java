@@ -18,6 +18,12 @@ public class Player {
 
     }
 
+    public Player(String username, String password, String initials) {
+        this.username = username;
+        this.password = password;
+        this.initials = initials;
+    }
+
     public Player(Integer id, String username, String password, String initials) {
         this.id = id;
         this.username = username;

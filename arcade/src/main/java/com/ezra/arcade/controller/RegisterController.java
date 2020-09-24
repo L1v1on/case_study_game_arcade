@@ -10,26 +10,25 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class LoginController {
+public class RegisterController {
     @Autowired
     PlayerService playerService;
 
-    @RequestMapping("/login")
-    public String showLoginPage(){
-        return "login";
+    @RequestMapping("/register")
+    public String showRegisterPage(){
+        return "register";
     }
 
-    // Tested mapping with Postman. Works and behaves how I assumed.
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     public String doLogin(ModelMap model,
                           @RequestParam String username,
-                          @RequestParam String password){
-        // TODO: validate user
-        Player playerLogin = playerService.getPlayer(username);
-        if(playerLogin != null && playerLogin.getUsername().equals(username) && playerLogin.getPassword().equals(password)){
-            return "gameHub";
-        }
-        model.put("Message", "Wrong Credentials");
+                          @RequestParam String password,
+                          @RequestParam String initials){
+        // TODO: create Player object, put in database, send to gameHub page
+        Player playerRegister = new Player(username, password, initials);
+        playerService.addPlayer(playerRegister);
+        model.put("Message", "Account Created!!!");
         return "login"; // TODO: return to page with some error message
     }
 }
