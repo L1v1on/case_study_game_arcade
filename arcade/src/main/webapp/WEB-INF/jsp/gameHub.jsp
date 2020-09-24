@@ -1,6 +1,7 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="/myDefault.css">
         <title>Game Hub</title>
     </head>
 

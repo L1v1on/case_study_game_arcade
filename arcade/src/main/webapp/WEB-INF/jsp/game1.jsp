@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/myDefault.css">
     <title>Game1</title>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
 </head>
