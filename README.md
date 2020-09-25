@@ -12,7 +12,7 @@ Full-stack web application using SpringBoot. Case study for PerScholas Charlotte
 1. `git clone` https://github.com/L1v1on/case_study_game_arcade.git
 2. install maven onto your machine
 3. open project in intellij or eclipse
-4. run ArcadeApplication in intellij or eclipse under src -> main -> java -> com.ezra.arcade
+4. run ArcadeApplication found under src -> main -> java -> com.ezra.arcade
 5. go to http://localhost:8085/login **(application.propertise has default port set to 8085 not 8080)**
 6. register and login
   - can see registered players in h2 database here http://localhost:8085/h2-console/
