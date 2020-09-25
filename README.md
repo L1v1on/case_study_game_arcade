@@ -5,7 +5,7 @@ Full-stack web application using SpringBoot. Case study for PerScholas Charlotte
 - Front-End: JSP/CSS/JS
 - Back-End: Spring Boot - embedded Apache Tomcat server
 - Database: Spring H2 Database
-- Game Engine: Phaser (JS game engine framework - create browser based games)
+- Game Engine: Phaser (JS game engine framework - create browser based games) https://github.com/photonstorm/phaser/tree/v3.24.1
 
 # how to run
 1. `git clone` https://github.com/L1v1on/case_study_game_arcade.git
