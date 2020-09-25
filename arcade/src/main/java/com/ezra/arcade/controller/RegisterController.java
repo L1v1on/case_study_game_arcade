@@ -29,6 +29,6 @@ public class RegisterController {
         Player playerRegister = new Player(username, password, initials);
         playerService.addPlayer(playerRegister);
         model.put("Message", "Account Created!!!");
-        return "login"; // TODO: return to page with some error message
+        return "redirect:/login"; // TODO: return to page with some message
     }
 }
